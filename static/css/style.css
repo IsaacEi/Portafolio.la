@@ -1,26 +1,238 @@
-.u-title{
-	color: red;
-	text-decoration: underline;
-}
-.Header{
 
-}
-.Header-imageContainer{
-
-}
-.Header-name{
-
+@font-face {
+	font-family: 'portafolio';
+	src:url('../fonts/portafolio.eot?-ewjl0k');
+	src:url('../fonts/portafolio.eot?#iefix-ewjl0k') format('embedded-opentype'),
+		url('../fonts/portafolio.ttf?-ewjl0k') format('truetype'),
+		url('../fonts/portafolio.woff?-ewjl0k') format('woff'),
+		url('../fonts/portafolio.svg?-ewjl0k#portafolio') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.MainMenu{
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'portafolio';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+	content: "\e603";
+}
+.icon-s-twitter:before {
+	content: "\e601";
+	color: #55acee;
+}
+.icon-s-twitter:hover:before {
+	color: #E99228;
+}
+.icon-s-facebook:before {
+	content: "\e602";
+	color: #3b5998;
+}
+.icon-s-facebook:hover:before {
+	color: #E99228;
+}
+.icon-s-facebook2:before {
+	content: "\e600";
+}
+.icon-s-twitter2:before {
+	content: "\ea91";
+}
+.icon-s-github:before {
+	content: "\eab2";
+	color: #333;
+}
+.icon-s-github:hover:before
+{
+	color: #E99228;
+}
+/* Utilidades */
+.u-title
+{
+	border-bottom: 1px solid #00CCFF;
+	color: #00CCFF;
+	font-weight: normal;
+	font-size: 1.5em;
+	padding-bottom: .5em;
+	text-align: center;
+}
+
+.u-containerDefault{
+    width: 800px;
+    margin: 0 auto;
+}
+/* MainMenu */
+.MainMenu
+{
+	background: #1E1E1E;
+	text-align: center;
+	height: 3.75em;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+.MainMenu-list
+{
+	margin: 0;
+	padding: 0;
+}
+.MainMenu-item
+{
+	display: inline-block;
+}
+.MainMenu-link
+{
+	color: #00CCFF;
+	text-decoration: none;
+	line-height: 3.75em;
+	margin-right: 1.2em;
+}
+
+/* Heder */
+.Header
+{
+	margin-top: 3.75em;
+	background-image: url('../images/portada.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 1.2em 0;
+}
+.Header-imageContainer
+{
+	margin:0;
+}
+.Header-image
+{
+	border: 3px solid white;
+	border-radius: 50%;
+	-webkit-transition: 1s;
+}
+.Header-image:hover
+{
+	border-color: orange;
+	-webkit-transform: rotateY(180deg);
+}
+.Header-name,
+.Header-link
+{
+	color:white;
+}
+.Header-link
+{
+	font-size: 2.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Header-name
+{
+	font-size: 1.2em;
+	font-weight: 300;
+	margin:0;
+}
+
+/* Profile */
+.Profile
+{
+	text-align: center;
+}
+.Profile-link
+{
+	border: 1px solid orange;
+	border-radius: 2em;
+	color: white;
+	margin-right: .5em;
+	padding: .2em 1em;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+.Profile-link:hover
+{
+	border: 1px solid black;
+}
+/* Work */
+.Work
+{
+	margin-top: 2em;
+	text-align: center;
+}
+.Work-item
+{
+	display:inline-block;
+	margin-right: 1.8em;
+	margin-bottom: 1.8em;
+}
+
+.Work-imageContainer
+{
+	margin: 0;
+}
+.Work-description
+{
+	font-size: 1.1em;
+	color: #515151;
+	font-style: italic;
+}
+
+/*Footer*/
+.Footer
+{
+	background-image: url('../images/footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2em 0;
+    text-align: center;
 
 }
-.Footer{
+.Footer-form
+{
+	text-align: center;
+	display: inline-block;
 
 }
-.Profile{
-
+.Footer-left
+{
+	display: inline-block;
+	text-align: center;
+	width: 32em;
+	vertical-align: top;
 }
-.Work{
+.Footer-title
+{
+	color: white;
+}
 
+.Footer-input,
+.Footer-textarea
+{
+	background: white;
+    border: none;
+    display: block;
+    border-radius: 1em;
+    padding: .5em;
+    margin: 0 auto .5em;
+}
+.Footer-textarea
+{
+	resize: none;
+}
+.Footer-button
+{
+	background:orange;
+	color:white;
+	border: none;
+	border-radius: 1em;
+	padding: .5em 1em;
 }
